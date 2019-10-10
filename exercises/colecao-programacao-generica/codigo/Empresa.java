@@ -13,6 +13,7 @@ public class Empresa {
 
     public void admitirFuncionario(Funcionario f) {
         funcionarios.add(f);
+        Collections.sort(funcionarios);
     }
 
     public void gerarRelatorioDePrioridade() {
