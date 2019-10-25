@@ -1,0 +1,27 @@
+1)
+a) O seguinte erro parare:
+"Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+        at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+        at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+        at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+        at java.base/java.util.Objects.checkIndex(Objects.java:372)
+        at java.base/java.util.ArrayList.get(ArrayList.java:458)
+        at Agencia.depositar(Agencia.java:27)
+        at Principal.depositar(Principal.java:62)
+        at Principal.executarOpcao(Principal.java:38)
+        at Principal.main(Principal.java:14)"
+Como não existe a conta, o sistema acessa uma posição inexiste no array contas, já que a conta é acessada da seguinte forma "Conta contaDestino = contas.get(numeroConta-1);".
+b) Opções 4 e 5.
+
+2)
+a) Não ocorre nenhum erro.
+b) Não há como o usuário saber que não foi realizada a operação porque o sistema não informa isso a ele.
+
+3)
+a) "Depósito realizado com sucesso..."
+b) "Saque realizado com sucesso..."
+c) "Transferência realizada com sucesso..."
+d) "Transferência realizada com sucesso...". Porque o sistema não verifica se as contas existem e não lançam um erro quando isso ocorre. Como não existe a conta, a operação não é realizada, então o saldo não varia.
+e) "null\nTransferência realizada com sucesso...". O null é enviado porque conta destino não existe.
+
+g) "Saque realizado com sucesso..."
